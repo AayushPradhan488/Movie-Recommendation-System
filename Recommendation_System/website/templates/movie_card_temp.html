@@ -1,0 +1,12 @@
+<div class="movie-list">
+    {% for mov in movie %}
+        <div class="movie-card">
+            <img src="{{ mov.image }}" alt="Movie Poster">
+            <h3>{{ mov.title }}</h3>
+            <p>{{ mov.genre }}</p>
+            <p>{{ mov.director }}</p>
+            <p>{{ mov.year }}</p>
+            <p>{{ mov.rating }}</p>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Recommendations</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Movie Recommendations</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">Genres</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="banner">
+      <h2>Welcome to our Movie Recommendations Website!</h2>
+      <p>Get personalized movie recommendations based on your interests and preferences.</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </section>
+    <section id="movies">
+      <div class="recomend">
+        <h2>Recommended Movies</h2>
+      </div>
+      {% include 'movie_card_temp.html' %}
+      {% include 'movie_card_temp.html' %}
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 Movie Recommendations. All rights reserved.</p>
+  </footer>
+</body>
+</html>
